@@ -27,10 +27,6 @@ jobs:
     - name: install AWS CDK
       run: sudo npm i -g aws-cdk
 
-    - name: install deployment dependencies
-      working-directory: ./py-webdepl
-      run: pip install -r requirements.txt
-
     - name: cdk synth
       working-directory: ./py-webdepl
       run: cdk synth
